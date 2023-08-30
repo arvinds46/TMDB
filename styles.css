@@ -1,0 +1,366 @@
+body{
+    margin: auto;
+}
+.main-container{
+     width: 100%; 
+    height: 100%;
+    
+} 
+/* Header */
+.navbar{
+    height: 10vh;
+    background-color:#102C57; 
+    margin: auto;
+    display: flex;
+}
+#logo{
+    color: white;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.left-nav{
+    width: 40%;
+    display: flex;
+    margin-right: 10px;
+    
+} 
+.left-nav a{
+color: white; 
+text-decoration: none;
+
+}
+.left-nav ul li{
+    list-style: none;
+    padding-top: 8px;
+    font-size: 18px;
+}
+.hide1{
+    display: none;
+    height: 140px;
+    width: 150px;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+.hide1 ul li a{
+    color: black; 
+    
+}
+.movie{
+  position: relative;
+}
+
+.movie:hover +.hide1{
+    display: block;
+    position: absolute;
+    left: 142px;
+    top:62px;
+    background-color: white;
+}
+.shows{
+    position: relative;
+}
+.hide2{
+    display: none;
+    height: 140px;
+    width: 140px;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+.hide2 ul li a{
+    color: black;
+    
+}
+.shows:hover +.hide2{
+    display: block;
+    position: absolute;
+    left: 250px;
+    top:62px;
+    background-color: white;
+}
+
+.people{
+    position: relative;
+}
+.hide3{
+    display: none;
+    height: 90px;
+    width: 140px;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+.hide3 ul li a{
+    color: black;
+    text-align: center;
+}
+.people:hover +.hide3{
+    display: block;
+    position: absolute;
+    left: 360px;
+    top:62px;
+    background-color: white;
+}
+.more{
+    position: relative;
+}
+.hide4{
+    display: none;
+    height: 150px;
+    width: 140px;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+.hide4 ul li a{
+    color: black;
+    padding-right: 20px;
+}
+.more:hover +.hide4{
+    display: block;
+    position: absolute;
+    left: 500px;
+    top:62px;
+    background-color: white;
+}
+
+.right-nav{
+      width: 30%;
+    margin-left:400px ;
+   
+}
+.right-nav a{
+    text-decoration: none;
+    color: white;
+    
+}
+.right-nav ul li {
+    list-style: none;
+     display: inline-flex; 
+     padding: 10px;
+     font-size: 18px;
+    
+}
+.right-nav ul li i{
+color: white;
+}
+.en{
+    height: 15px;
+    width: 15px;
+    border: 1px solid white;
+    color: white;
+    text-align: center;
+}
+ul li.en:hover, .en:hover a{
+    background-color: white;
+    color: black !important;
+    
+}
+/* Main Container */
+.container2{
+    height: 40vh;
+    background-color: #4477CE;
+    margin: 0;
+}
+#welcome{
+    margin-left:40px;
+    padding-top: 40px;
+    margin-top: auto;
+    color: white;
+}
+#million{
+    margin-left:40px;
+    color: white;
+}
+.input-box{
+    position: relative;
+    margin-left:40px;
+    
+}
+.input-box input{
+    height: 40px;
+    width: 96%;
+    border-radius: 30px;
+    font-size: 15px;
+    padding-left: 20px;
+    border: none;
+}
+.input-box .searchbtn{
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    right: 2.1%;
+    height: 43px;
+    border-radius: 30px;
+    width: 100px;
+    background-image: linear-gradient(skyblue,teal);
+    color: white;
+    border: none;
+    font-weight: bold;
+}
+.input-box .searchbtn:hover {
+    color: black;
+}
+/* Cards */
+
+.trending, .trailer, .popular, .watchtv{
+    display: flex;
+    width: auto;
+    height: 30px;
+    align-items: center;
+    padding:0 10px;
+    margin-left: 20px;
+}
+.trending button,.trailer button, .popular button, .watchtv button{
+    margin-left: 20px;
+}
+
+.card{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; 
+    flex-flow:row; 
+    overflow-x:auto;
+    height: 370px;
+    margin-left: 20px;
+}
+.cards{
+    height: 200px;
+    width: 150px;
+    margin-left: 20px;
+    margin-top: 20px;
+    border-radius: 10px;  
+}
+img{
+    height: 200px;
+    width: 150px;
+    border-radius: 10px;
+}
+/* Videos */
+.container3{
+    height: 50vh;
+    background-color: #4477CE;
+    margin: auto;
+}
+.button2{
+    display: flex;   
+}
+ .videos{
+    height: 300px;
+     width: auto; 
+    margin-left: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px; 
+    flex-flow:row;  
+    overflow-x: auto;
+}
+
+.video{
+    height: 180px;
+    width: 300px;
+    border-radius: 10px;  
+} 
+.container4{
+    height: 40vh;
+    margin: 0;
+}
+.whats{
+    height: 300px;
+    width: auto; 
+   margin-left: 20px;
+   margin-top: 20px;
+   border-radius: 10px;
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   gap: 20px; 
+   flex-flow:row; 
+   overflow-x: auto; 
+}
+.container5{
+    height: 40vh;
+    margin-top: 100px;
+    
+}
+.watch{
+    height: 300px;
+    width: auto; 
+   margin-left: 20px;
+   margin-top: 20px;
+   border-radius: 10px;
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   gap: 20px; 
+   flex-flow:row;  
+   overflow-x: auto;
+}
+.container6{
+    margin-top: 180px;
+    background-image: url(https://img.freepik.com/free-photo/movie-background-collage_23-2149876003.jpg?w=740&t=st=1692700222~exp=1692700822~hmac=b5ed790b111cf91afd263cc2d3b93daa4da118cf35bf8e95494f34fe4d40f10a);
+   display: flex;
+   align-items: baseline;
+}
+.join{
+
+margin-left: 30px;
+color: white;
+}
+.para{
+    /* padding-top: 20px; */
+margin-left: 30px;
+color: white;
+}
+
+.signup{
+    
+    margin-left: 30px;
+   height: 40px;
+   width: 90px;
+   background-color: #504099;
+   color: white;
+   border-radius: 5px;
+   font-size: 18px;
+   margin-bottom: 20px;
+}
+
+.tmdbads{
+    color: white;
+    padding-top: 0;
+
+    
+}
+
+footer{
+height: 300px;
+background-color: #001C30;
+margin: auto;
+}
+.tmdb{
+color: #7EAA92;
+
+}
+.community{
+    width: 200px;
+    height: 40px;
+    color: rgb(0, 204, 255);
+    background-color: white;
+    font-size: 16px;
+    margin-top: 120px;
+    border-radius: 10px;
+
+}
+ .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+} 
+.header{
+    color: white;
+} 
+ul li{
+    color: white;
+}
