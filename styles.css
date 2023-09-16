@@ -6,6 +6,9 @@ body{
     height: 100%;
     
 } 
+/* .header-container{
+    position: fixed;
+}  */
 /* Header */
 .navbar{
     height: 10vh;

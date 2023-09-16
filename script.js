@@ -20,12 +20,12 @@ function getMovie(){
         let data='';
         //Array walkthrough 
         json.results.forEach(details => {
-            data+=`
+            data+=` <a href="tmdb1.html?${details.id}">
             <div class="cards">
      <img src="https://image.tmdb.org/t/p/original/${details.poster_path}">
     <h3>${details.original_title}</h3>
     <p>${details.release_date}</p>
-           </div>`;
+           </div></a>`;
         });
     
       document.getElementById("moviedetails").innerHTML = data;

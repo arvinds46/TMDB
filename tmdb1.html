@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="tmdb1.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="col-12 main-header" style="background-color: #102C57;">
+        <div class="tmdb mt-1">
+        <h1>TMDB</h1>
+        </div>
+        <div class="alldivs" >
+        <div class="movie">
+         <ul>
+            <li> <a href="#">Movies</a></li>
+         </ul>
+        </div>
+        <div class="list1">
+            <ul>
+                <li><a href="#">Popular</a></li>
+                <li><a href="#">Now Playing</a></li>
+                <li><a href="#">Upcoming</a></li>
+                <li><a href="#">Top Rated</a></li>
+            </ul>
+        </div>
+        <div class="tvshows">
+          <ul>
+            <li><a href="#" >TVShows</a></li>
+          </ul>
+        </div>
+        <div class="list2">
+            <ul>
+                <li><a href="#">Popular</a></li>
+                <li><a href="#"> Airing Today</a></li>
+                <li><a href="#">On Tv</a></li>
+                <li><a href="#">Top Rated</a></li>
+            </ul>
+        </div>
+        <div class="people">
+        <ul>
+            <li><a href="#">People</a></li>
+        </ul>
+        </div>
+        <div class="list3">
+            <ul>
+                <li><a href="#">Popular People</a></li>
+            </ul>
+            </div>
+        <div class="more">
+<ul>
+    <li><a href="#">More</a></li>
+</ul>
+</div>
+<div class="list4">
+    <ul>
+        <li><a href="#">Discussion</a></li>
+        <li><a href="#"> Leaderboard</a></li>
+        <li><a href="#"> Support</a></li>
+        <li><a href="#">API  </a></li>
+    </ul>
+</div>
+</div>
+<div  class="col-6 col-sm-6 d-flex justify-content-end text-light pe-5 mt-2" style="margin: 0 200px;">
+    <i class="uil uil-plus fs-3 me-4" ></i>
+    <div class="d-flex justify-content-center align-items-center p-3 me-4 mt-2" style="width:20px;height:20px;border: 1px solid white;">EN</div>
+    <i class="bi bi-bell fs-3 me-4"></i>
+    <div class="d-flex justify-content-center align-items-center p-3 me-4 mt-2" style="width:20px;height:20px;border-radius: 20px;background-color: blue;">J</div>
+    <i class="uil uil-search fs-3 me-4" ></i> 
+</div>  
+</div>
+        </div> 
+        <div class="container-fluid d-flex pt-2" style="background-color: gray; height: 50px;">
+            <div class="overview">
+                <ul>
+                 <li> <a href="Overview"> Overview <i class="fa fa-caret-down"></i></a></li>
+                </ul>
+             </div>
+             <div class="dropdown1">
+         <ul>
+             <li> <a href="main">Main</a></li>
+             <li> <a href="alternative">Alternative Titles</a></li>
+             <li> <a href="cast">Cast and Crew</a></li>
+             <li> <a href="relese">Release Dates</a></li>
+             <li> <a href="translation">Translations</a></li>
+             <li> <a href="changes">Changes</a></li>
+         </ul>
+             </div>
+             <div class="Media">
+                 <ul>
+                  <li> <a href="media"> Media <i class="fa fa-caret-down"></i></a></li>
+                 </ul>
+              </div>
+              <div class="dropdown2">
+          <ul>
+              <li> <a href="backdrops">Backdrops</a></li>
+              <li> <a href="logo">Logo</a></li>
+              <li> <a href="poster">Poster</a></li>
+          </ul>
+              </div>
+              <div class="fandom">
+                 <ul>
+                  <li> <a href="fandom"> Fandom <i class="fa fa-caret-down"></i></a></li>
+                 </ul>
+              </div>
+              <div class="dropdown3">
+          <ul>
+              <li> <a href="discussion">Discussion</a></li>
+              <li> <a href="reviews">Reviews</a></li>
+          </ul>
+              </div>
+              <div class="share">
+                 <ul>
+                  <li> <a href="share"> Share <i class="fa fa-caret-down"></i></a></li>
+                 </ul>
+              </div>
+              <div class="dropdown4">
+          <ul>
+              <li> <a href="sharelink">Share Link</a></li>
+              <li> <a href="facebook"> Facebook</a></li>
+              <li> <a href="tweet"> Tweet</a></li>
+          </ul>
+            </div>
+        </div>
+        <div id="moviedetails">
+        <div class="backgroundimage d-flex" style="background-image: linear-gradient(rgba(134, 191, 238, 0.8),rgba(127, 188, 238, 0.8)), url('https://image.tmdb.org/t/p/original/ctMserH8g2SeOAnCw5gFjdQF8mo.jpg');">
+            <div class="image">
+                <img src="https://image.tmdb.org/t/p/w500/iuFNMS8U5cb6xfzi51Dbkovj7vM.jpg" style="width: 300px; height: 500px; border-radius: 5px;">
+            </div> 
+            <div>
+            <div class="whitetext col-" style="color: white; font-size: 15px;">
+                <div class="barbie">
+                  <h2>Barbie</h2>
+                </div>
+                <div class="date">
+                     <p>19/07/2023.Comedy,Adventure,Fantasy.114</p>
+                </div>
+                <div class="progress-bar">
+                    <progress value="73" min="0" max="100" style="visibility:hidden;height:0;width:0;">73%</progress>
+                </div>
+              <p class="italic"><i>She's everything. He's just ken.</i></p>
+              <h3 class="over">Overview</h3>
+              <p class="para"> Barbie and Ken are having the time of their lives in the colorful and seemingly perfect world of Barbie Land. However, when they get a chance to go to the real world, they soon discover the joys and perils of living among humans.</p>
+            </div>
+            <div class="whitelist d-flex flex-row col-12" style="color: white; font-size: 13px;" >
+                <div class="whitelist1 col-4">
+                    <h4>Noah Baumbach</h4>
+                    <p>Production</p>
+                    <h4>David Heyman</h4>
+                    <p>Production</p>
+                    <h4>Lucy Bevan</h4>
+                    <p>Production</p>
+                    <h4>Jacqueline Durran</h4>
+                    <p>Production</p>
+               </div>
+            <div class="whitelist2 col-4">
+                <h4>Noah Baumbach</h4>
+                <p>Writing</p>
+                <h4>Andy Malcolm</h4>
+                <p>Sound</p>
+                <h4>Roy Taylor</h4>
+                <p>Crew</p>
+                <h4>Sarah Greenwood</h4>
+                <p>Art</p>
+            </div>
+            <div class="whitelist3 col-4">
+                <h4>Carmel Jackson</h4>
+                <p>Costume & Make-Up</p>
+                <h4>Toby Emmerich</h4>
+                <p>Production</p>
+                <h4>Ryan Gosling</h4>
+                <p>Sound</p>
+                <h4>Katie Spencer</h4>
+                <p>Art</p>
+            </div>
+        </div>
+    </div>
+        </div>
+    </div>
+        <div class="text ps-4 pt-4">
+            <h4>Top Billed Cast</h4>
+        </div>
+    <div class="cardimages">
+        <div class="col ms-5 mt-4" >
+            <div class="card">
+              <img src="https://image.tmdb.org/t/p/w500/euDPyqLnuwaWMHajcU3oZ9uZezR.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h6 class="card-title"> Margot Robbie</h6>
+                <p class="card-text">Barbie</p>
+            </div>
+    </div>
+</div>
+    <div class="col ms-5 mt-4">
+        <div class="card">
+          <img src="https://image.tmdb.org/t/p/w500/euDPyqLnuwaWMHajcU3oZ9uZezR.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h6 class="card-title"> Margot Robbie</h6>
+            <p class="card-text">Barbie</p>
+        </div>
+</div>
+</div>
+<div class="col ms-5 mt-4">
+    <div class="card">
+      <img src="https://image.tmdb.org/t/p/w500/euDPyqLnuwaWMHajcU3oZ9uZezR.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h6 class="card-title"> Margot Robbie</h6>
+        <p class="card-text">Barbie</p>
+    </div>
+</div>
+</div>
+<div class="col ms-5 mt-4">
+    <div class="card">
+      <img src="https://image.tmdb.org/t/p/w500/euDPyqLnuwaWMHajcU3oZ9uZezR.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h6 class="card-title"> Margot Robbie</h6>
+        <p class="card-text">Barbie</p>
+    </div>
+</div>
+</div>
+<div class="col ms-5 mt-4">
+    <div class="card">
+      <img src="https://image.tmdb.org/t/p/w500/euDPyqLnuwaWMHajcU3oZ9uZezR.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h6 class="card-title"> Margot Robbie</h6>
+        <p class="card-text">Barbie</p>
+    </div>
+</div>
+</div>
+<div class="col ms-5 mt-4">
+    <div class="card">
+      <img src="https://image.tmdb.org/t/p/w500/euDPyqLnuwaWMHajcU3oZ9uZezR.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h6 class="card-title"> Margot Robbie</h6>
+        <p class="card-text">Barbie</p>
+    </div>
+</div>
+</div>
+<div class="col ms-5 mt-4">
+    <div class="card">
+      <img src="https://image.tmdb.org/t/p/w500/euDPyqLnuwaWMHajcU3oZ9uZezR.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h6 class="card-title"> Margot Robbie</h6>
+        <p class="card-text">Barbie</p>
+    </div>
+</div>
+</div>
+<div class="col ms-5 mt-4">
+    <div class="card">
+      <img src="https://image.tmdb.org/t/p/w500/euDPyqLnuwaWMHajcU3oZ9uZezR.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h6 class="card-title"> Margot Robbie</h6>
+        <p class="card-text">Barbie</p>
+    </div>
+</div>
+</div>
+<div class="col ms-5 mt-4">
+    <div class="card">
+      <img src="https://image.tmdb.org/t/p/w500/euDPyqLnuwaWMHajcU3oZ9uZezR.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h6 class="card-title"> Margot Robbie</h6>
+        <p class="card-text">Barbie</p>
+    </div>
+</div>
+</div>
+    </div>
+        <div class="fullcast ps-4 pt-4">
+     <h5>Full Cast & Crew</h5>
+        </div>
+<div class="ps-4 pt-4" style="width: 66em;">
+    <hr>
+</div>
+<div class="col-3 social  d-flex">
+    <h5>Social</h5>
+    <h6>Reviews</h6>
+    <h6>Discussions</h6>
+    </div>
+    <div class="reviews col-9 pt-4 ps-5 ms-5">
+        <h4 class="ps-5">A review by Chris Sawin <button type="button" class="btn btn-dark" ><i class="bi bi-star"></i>7</button></h4>
+        <h5 class="ps-5" style="opacity: 0.5;">Written by Chris Sawin on </h5>
+        <p>_Barbie_ reels you in with its silly humor and fantastical ideas. The war of Kens during the last half hour of the film is an all-timer because a battle full of handsome maneuvers, like showing off their naked chest and manly noogies, turns into a full on dance off between Ryan Gosling and Simu Liu. But the second half of the film leaves a thought-provoking message in your brain regarding both men and women. The Kens gaining respect little by little mirrors how women eventually earned their rights to be respected individuals — after being considered as only being useful in the kitchen or for making babies — except with the gender roles reversed and nude blobs instead of genitalia. **Full review:** https://bit.ly/beachoff</p>
+    </div>
+</div>
+<h6 class="ms-5 mt-3 ">Read All Reviews</h6>
+<pre></pre>
+<div class="col-5  social  d-flex ms-5">
+        <h5>Media</h5>
+        <h6>MOst Popular</h6>
+        <h6>Videos</h6>
+        <h6>Backdrops</h6>
+        <h6>Posters</h6>
+    </div>
+    <div class="col-9.6 video ps-5" >
+        <div class="iframe">
+            <iframe width="500" height="315" src="https://www.youtube.com/embed/uQCM613pqY4?si=3Zam6QV4LH8pqABK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="oneimage">
+            <img src="https://image.tmdb.org/t/p/original/ctMserH8g2SeOAnCw5gFjdQF8mo.jpg">
+        </div>
+        <div class="twoimage">
+            <img src="https://image.tmdb.org/t/p/original/iuFNMS8U5cb6xfzi51Dbkovj7vM.jpg">
+       </div>
+    </div>
+    <div class="ps-4 pt-4" style="width: 66em;">
+        <hr>
+    </div>
+    <div class="text ps-4 pt-4">
+        <h4>Recommendations  </h4>
+    </div>
+<div class="Recommendations-images">
+    <div class="col ms-5 mt-4" ps-5 >
+        <div class="card" style="width: 18rem;">
+            <img src="https://image.tmdb.org/t/p/original/ctMserH8g2SeOAnCw5gFjdQF8mo.jpg" class="card-img-top" alt="...">
+        </div>
+        <p class="card-text"> Barbie</p>
+        </div>
+        <div class="col ms-5 mt-4" >
+            <div class="card" style="width: 18rem;">
+                <img src="https://image.tmdb.org/t/p/original/ctMserH8g2SeOAnCw5gFjdQF8mo.jpg" class="card-img-top" alt="...">
+            </div>
+            <p class="card-text"> Barbie</p>
+            </div>
+            <div class="col ms-5 mt-4" >
+                <div class="card" style="width: 18rem;">
+                    <img src="https://image.tmdb.org/t/p/original/ctMserH8g2SeOAnCw5gFjdQF8mo.jpg" class="card-img-top" alt="...">
+                </div>
+                <p class="card-text"> Barbie</p>
+                </div>
+                <div class="col ms-5 mt-4" >
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://image.tmdb.org/t/p/original/ctMserH8g2SeOAnCw5gFjdQF8mo.jpg" class="card-img-top" alt="...">
+                    </div>
+                    <p class="card-text"> Barbie</p>
+                    </div>
+                 <div class="col ms-5 mt-4" >
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://image.tmdb.org/t/p/original/ctMserH8g2SeOAnCw5gFjdQF8mo.jpg" class="card-img-top" alt="...">
+                    </div>
+                        <p class="card-text"> Barbie</p>
+                    </div>
+                 <div class="col ms-5 mt-4" >
+                     <div class="card" style="width: 18rem;">
+                                <img src="https://image.tmdb.org/t/p/original/ctMserH8g2SeOAnCw5gFjdQF8mo.jpg" class="card-img-top" alt="...">
+                    </div>
+                            <p class="card-text"> Barbie</p>
+                            </div>
+                            <div class="col ms-5 mt-4" >
+                                <div class="card" style="width: 18rem;">
+                                    <img src="https://image.tmdb.org/t/p/original/ctMserH8g2SeOAnCw5gFjdQF8mo.jpg" class="card-img-top" alt="...">
+                                </div>
+                                <p class="card-text"> Barbie</p>
+                                </div>
+                                <div class="col ms-5 mt-4" >
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="https://image.tmdb.org/t/p/original/ctMserH8g2SeOAnCw5gFjdQF8mo.jpg" class="card-img-top" alt="...">
+                                    </div>
+                                    <p class="card-text"> Barbie</p>
+                                    </div>
+                                    <div class="col ms-5 mt-4" >
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="https://image.tmdb.org/t/p/original/ctMserH8g2SeOAnCw5gFjdQF8mo.jpg" class="card-img-top" alt="...">
+                                        </div>
+                                        <p class="card-text"> Barbie</p>
+                                        </div>
+                                        <div class="col ms-5 mt-4" >
+                                            <div class="card" style="width: 18rem;">
+                                                <img src="https://image.tmdb.org/t/p/original/ctMserH8g2SeOAnCw5gFjdQF8mo.jpg" class="card-img-top" alt="...">
+                                            </div>
+                                            <p class="card-text"> Barbie</p>
+                                            </div>
+</div>
+<footer class="footer">
+    <div class="container7">
+    <div class="col-12 d-flex pt-5" >
+        <div class="ms-5 ps-3 d-flex flex-column">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/8/89/Tmdb.new.logo.svg" style="height: 200px;width: 200px;">
+                <div class="btn"> 
+                    <button type="button" class="community">JOIN THE COMMUNITY</button>
+                </div>
+       </div> 
+    <div class=" list col=10 ps-5 ms-5">
+    <div class="cls1">
+    <h4 class="header">THE BASICS</h4>
+    <ul>
+        <li> About TMDB</li>
+        <li>Contact Us </li>
+        <li>Support Forums </li>
+        <li>API </li>
+        <li>System Status </li>
+    </ul>
+</div>
+ <div class="cls2"> 
+    <h4 class="header">GET INVOLVED </h4>
+    <ul>
+        <li> Contribution Bible </li>
+        <li>Contribution Bible  </li>
+        <li> Add New Movie </li>
+        <li>Add New TV Show  </li>
+    </ul>
+</div>
+<div class="cls3">
+    <h4 class="header">COMMUNITY</h4>
+    <ul>
+        <li> Guidelines</li>
+        <li>Discussions</li>
+        <li>Leaderboard </li>
+        <li>Twitter </li>
+    </ul>
+</div>
+<div class="cls4">
+    <h4 class="header">LEGAL</h4>
+    <ul>
+        <li> Terms of Use</li>
+        <li>API Terms of Use </li>
+        <li>Privacy Policy </li>
+        <li>DMCA Takedown Request </li>
+    </ul>
+</div>
+</div>
+ </div>
+</div>
+</footer>
+</div>
+<script src="tmdb1.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>
